@@ -5,13 +5,15 @@
 # -------------------------------------------------------------------- |
 #                       SCRIPT OPTIONS                                 |
 # ---------------------------------------------------------------------|
-OPENCV_VERSION='4.5.1'       # Version to be installed
+OPENCV_VERSION='4.5.3'       # Version to be installed
 OPENCV_CONTRIB='NO'          # Install OpenCV's extra modules (YES/NO)
 # -------------------------------------------------------------------- |
 
 # |          THIS SCRIPT IS TESTED CORRECTLY ON          |
 # |------------------------------------------------------|
 # | OS               | OpenCV       | Test | Last test   |
+# |------------------|--------------|------|-------------|
+# | Ubuntu 21.04 LTS | OpenCV 4.5.3 | OK   | 6 Sep 2021 |
 # |------------------|--------------|------|-------------|
 # | Ubuntu 20.04 LTS | OpenCV 4.5.1 | OK   | 27 Mar 2021 |
 # |----------------------------------------------------- |
@@ -28,7 +30,6 @@ OPENCV_CONTRIB='NO'          # Install OpenCV's extra modules (YES/NO)
 # | Debian 9.5       | OpenCV 3.4.2 | OK   | 18 Jul 2018 |
 
 
-
 # 1. KEEP UBUNTU OR DEBIAN UP TO DATE
 
 sudo apt-get -y update
@@ -42,6 +43,7 @@ sudo apt-get -y update
 # Build tools:
 sudo apt-get install -y build-essential cmake
 
+# QT5 is required for 4.5.X https://download.qt.io/official_releases/qt/5.12/5.12.3/
 # GUI (if you want GTK, change 'qt5-default' to 'libgtkglext1-dev' and remove '-DWITH_QT=ON'):
 sudo apt-get install -y qt5-default libvtk6-dev
 
