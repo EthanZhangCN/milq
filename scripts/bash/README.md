@@ -12,5 +12,7 @@ This is a compilation of my scripts in Ubuntu or Debian that I consider useful.
 
 Opencv for python cmd:
 ```
-cmake -D BUILD_opencv_python3=yes -D BUILD_opencv_python2=no -D PYTHON3_EXECUTABLE=/home/zzz/anaconda3/envs/mask/bin/python3.6m -D PYTHON3_INCLUDE_DIR=/home/zzz/anaconda3/envs/mask/include/python3.6m -D PYTHON3_LIBRARY=/home/zzz/anaconda3/envs/mask/lib/libpython3.6m.so -D PYTHON3_NUMPY_INCLUDE_DIRS=/home/zzz/anaconda3/envs/mask/lib/python3.6/site-packages/numpy/core/include -D PYTHON3_PACKAGES_PATH=/home/zzz/anaconda3/envs/mask/lib/python3.6/site-packages/numpy -D PYTHON_DEFAULT_EXECUTABLE=/home/zzz/anaconda3/envs/mask/bin/python3.6m ..
+$ cd build
+cmake -D BUILD_opencv_python3=yes -D BUILD_opencv_python2=no -D PYTHON3_EXECUTABLE=/home/zhizizhang/anaconda3/envs/osm/bin/python3.6m -D PYTHON3_INCLUDE_DIR=/home/zhizizhang/anaconda3/envs/osm/include/python3.6m -D PYTHON3_LIBRARY=/home/zhizizhang/anaconda3/envs/osm/lib/libpython3.6m.so -D PYTHON3_NUMPY_INCLUDE_DIRS=/home/zhizizhang/anaconda3/envs/osm/lib/python3.6/site-packages/numpy/core/include -D PYTHON3_PACKAGES_PATH=/home/zhizizhang/anaconda3/envs/osm/lib/python3.6/site-packages/ -D PYTHON_DEFAULT_EXECUTABLE=/home/zhizizhang/anaconda3/envs/osm/bin/python3.6m -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/home/zhizizhang/opencv ..
 ```
+
